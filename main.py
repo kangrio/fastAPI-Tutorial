@@ -5,11 +5,15 @@ from typing import List, Optional
 
 app = FastAPI()
 
+#
+#
 # GET : คือการขอข้อมูลจาก Server โดยจะขอผ่าน Path
 # POST : คือการสน้างข้อมูลใหม่
 # DELETE : คือการลบข้อมูล
 # PUT : คือการอัปเดตข้อมูล
 # PATCH : คือการอัปเดตข้อมูล
+#
+#
 
 @app.get("/")
 def read_root():
