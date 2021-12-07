@@ -5,11 +5,11 @@ from typing import List, Optional
 
 app = FastAPI()
 
-# GET : คือการขอข้อมูลจาก Server โดยจะขอผ่าน Path
-# POST : คือการสน้างข้อมูลใหม่
-# DELETE : คือการลบข้อมูล
-# PUT : คือการอัปเดตข้อมูล
-# PATCH : คือการอัปเดตข้อมูล
+# GET : คือการขอข้อมูลจาก Server โดยจะส่ง data ขอผ่าน URL
+# POST : คือการขอสร้างข้อมูลใหม่บน Server
+# DELETE : คือการขอลบข้อมูลบน Server
+# PUT : คล้าย POST แต่จุดประสงค์ คือ การขออัปเดตข้อมูลทั้งหมดทุก field
+# PATCH : คือการอัปเดตข้อมูลเฉพาะ field ที่เราส่งไป
 
 
 @app.get("/")
