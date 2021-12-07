@@ -1,6 +1,5 @@
 __pycache__
 .vscode
 env
-# todos.db
-
+todos.db
 /fastapi/video.mp4
