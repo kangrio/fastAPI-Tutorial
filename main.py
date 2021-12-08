@@ -77,3 +77,9 @@ async def read_notes(showCompleted: Optional[bool] = False):
     query = notes.select()
     query = query.where(notes.c.completed == showCompleted)
     return await database.fetch_all(query)
+
+# mrchoke test
+
+@app.get("/mrchoke")
+def mrchoke():
+    return "I am MrChoke"
