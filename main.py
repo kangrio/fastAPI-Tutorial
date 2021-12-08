@@ -84,6 +84,7 @@ async def read_notes(showCompleted: Optional[bool] = False):
 def mrchoke():
     return "I am MrChoke"
 
+
 @app.get("/masolae")
 def mrchoke():
     return "I am Masolae"
